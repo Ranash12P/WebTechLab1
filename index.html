@@ -5,86 +5,239 @@
     <link href="inc/StyleSheet.css" rel="stylesheet"/>
     <style>
         #myDiv {
-            border: 1px solid silver;
-            background-color: aqua;
-            font-size: 22px;
+            border: 13px solid black;
+            background-color:crimson;
+            font-size: 20px;
             text-align: center;
         }
 
+
         button {
-            width: 42px;
+            width: 30px;
             padding: 10px;
+            text-align: center;
+            
         }
+
+
         .but1 {
-            width: auto;
-            padding: 10px 11px 10px 10px;
+
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            font-size: 18px;
+            text-align: center;
+            cursor: pointer;
+            
+
         }
 
         .calculator-row {
             clear: both;
         }
 
+
+            
         .calculator-button {
             float: left;
             width: 50px;
             height: 50px;
-            margin: 5px;
+            margin: 10px;
             font-size: 18px;
             text-align: center;
             cursor: pointer;
+            color: red;
+
         }
 
      
     </style>
 </head>
-<body>
-	<div style="border: 1px solid cyan; width: 200px; min-height: 100px;margin: 20px auto;">
-    <div>
-        <div style="float: left"><button class="but1">1</button></div>
-        <div style="float: left"><button class="but1">2</button></div>
-        <div style="float: left"><button class="but1">3</button></div>
-        <div style="clear: both;"></div>
-    </div>
+<div>
+    <!-- This is the calculator style -->
+
+	<div style="border: 1px solid black;background-color:whitesmoke; width: 500px; min-height: 500px;margin: 30px auto;">
+     
+        <div>
+            <div style="float: left"><button class="calculator-button">MC</button></div>
+            <div style="float: left"><button class="calculator-button">MR</button></div>
+            <div style="float: left"><button class="calculator-button">M+</button></div>
+            <div style="float: left"><button class="calculator-button">M-</button></div>
+            <div style="float: left"><button class="calculator-button">MS</button></div>
+            <div style="float: left"><button class="calculator-button">M*</button></div>
+
+            <div style="clear: both;"></div>
+            <div style="align-items: center;"></div>
+
+
+        </div>
+  
+        <div>
+            <div style="float: left"><button class="calculator-button">2nd</button></div>
+            <div style="float: left"><button class="calculator-button">Pi</button></div>
+            <div style="float: left"><button class="calculator-button">e</button></div>
+            <div style="float: left"><button class="calculator-button">C</button></div>
+            <div style="float: left"><button class="calculator-button">De</button></div>
+           
+
+            <div style="clear: both;"></div>
+            <div style="align-items: center;"></div>
+
+
+        </div>
+  
+        
+        <div>
+            <div style="float: left"><button class="calculator-button">x^2</button></div>
+            <div style="float: left"><button class="calculator-button">1/x</button></div>
+            <div style="float: left"><button class="calculator-button">|x|</button></div>
+            <div style="float: left"><button class="calculator-button">exp</button></div>
+            <div style="float: left"><button class="calculator-button">mod</button></div>
+           
+            <div style="clear: both;"></div>
+            <div style="align-items: center;"></div>
+
+            <div>
+                <div style="float: left"><button class="calculator-button">sqrt</button></div>
+                <div style="float: left"><button class="calculator-button">(</button></div>
+                <div style="float: left"><button class="calculator-button">)</button></div>
+                <div style="float: left"><button class="calculator-button">n!</button></div>
+                <div style="float: left"><button class="calculator-button">/</button></div>
+                
+    
+                <div style="clear: both;"></div>
+                <div style="align-items: center;"></div>
+    
+    
+            </div>
+      
+        </div>
+  
+        <div>
+            <div style="float: left"><button class="calculator-button">x^y</button></div>
+            <div style="float: left"><button class="but1">7</button></div>
+            <div style="float: left"><button class="but1">8</button></div>
+            <div style="float: left"><button class="but1">9</button></div>
+            <div style="float: left"><button class="calculator-button">x</button></div>
+            <div style="clear: both;"></div>
+            <div style="align-items: center;"></div>
+
+        </div>
+  
+      
  
     <div>
+        <div style="float: left"><button class="calculator-button">10^x</button></div>
         <div style="float: left"><button class="but1">4</button></div>
         <div style="float: left"><button class="but1">5</button></div>
         <div style="float: left"><button class="but1">6</button></div>
+        <div style="float: left"><button class="calculator-button">-</button></div>
         <div style="clear: both;"></div>
+        <div style="align-items: center;"></div>
+
     </div>
  
-
     <div>
-        <div style="float: left"><button class="but1">7</button></div>
-        <div style="float: left"><button class="but1">8</button></div>
-        <div style="float: left"><button class="but1">9</button></div>
-		<div style="float: left"><button class="but1">0</button></div>
+        <div style="float: left"><button class="calculator-button">log</button></div>
+        <div style="float: left"><button class="but1">1</button></div>
+        <div style="float: left"><button class="but1">2</button></div>
+        <div style="float: left"><button class="but1">3</button></div>
+        <div style="float: left"><button class="calculator-button">+</button></div>
         <div style="clear: both;"></div>
+        <div style="align-items: center;"></div>
+
     </div>
+
 
 	<div>
-        <div style="float: left"><button class="but1">+</button></div>
-        <div style="float: left"><button class="but1">-</button></div>
-		<div style="float: left"><button class="but1">=</button></div>
-		<div style="float: left"><button class="but1">*</button></div>
-        <div style="float: left"><button class="but1">/</button></div>
+        <div style="float: left"><button class="calculator-button">ln</button></div>
+        <div style="float: left"><button class="but1">+/-</button></div>
+    <div style="float: left"><button class="but1">0</button></div>
+    <div style="float: left"><button class="calculator-button">.</button></div>
+    <div style="float: left"><button class="calculator-button">=</button></div>
+    <div style="clear: both;"></div>
+    <div style="align-items: center;"></div>
 
 
-        <div style="clear: both;"></div>
-
-
-		
     </div>
  
-	
-	<div style="border: 1px solid black; width: 150px; min-height: 25px;margin: 25px auto;">
+	<!-- this is the result button style -->
+
+	<div style="border: 1px solid black; background-color: white; width: 150px; min-height:50px;margin: 25px auto;"> 
 
     <div id="result">
 
     </div>
     
     </div>
+  
     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Select the result display element
+            const resultDisplay = document.getElementById('result');
+    
+            // Select all calculator buttons
+            const calculatorButtons = document.querySelectorAll('.calculator-button, .but1');
+    
+            // Initialize the current expression
+            let currentExpression = '';
+    
+            // Function to update the result display
+            const updateDisplay = () => {
+                resultDisplay.textContent = currentExpression;
+            };
+    
+            // Event listener for calculator buttons
+            calculatorButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const buttonText = this.textContent;
+    
+                    // Handle different button actions
+                    switch (buttonText) {
+                        case 'De':
+                            // Clear the current expression
+                            currentExpression = '';
+                            break;
+                        case '=':
+                            // Evaluate the expression and update the display
+                            try {
+                                currentExpression = eval(currentExpression);
+                            } catch (error) {
+                                currentExpression = 'Error';
+                            }
+                            break;
+                
+                        case '/':
+                            // Append the arithmetic operator to the current expression
+                            currentExpression += buttonText;
+                            break;
+                        default:
+                            // Append the button text to the current expression
+                            currentExpression += buttonText;
+                            break;
+                    }
+    
+                    // Update the display
+                    updateDisplay();
+                });
+            });
+        });
+    
+        // Event listener for arithmetic operations
+        const arithmeticButtons = document.querySelectorAll('.calculator-button:not(.but1)');
+        arithmeticButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                const buttonText = this.textContent;
+
+                // Append the arithmetic operator to the current expression
+                currentExpression += buttonText;
+
+                // Update the display
+                updateDisplay();
+            });
+        });
+
         // custom config for the MTW app 
         const mtwAppConfig = {
             border: true // app border in the MTW page                    
@@ -104,8 +257,7 @@
 
         // use this in order to send on document load
         document.addEventListener('DOMContentLoaded', () => {
-            // your code here:
-            //sendRequestToParent({ method: 'getAssets' })
+        
         })
 
     </script>
